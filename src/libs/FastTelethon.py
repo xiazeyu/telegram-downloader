@@ -172,7 +172,7 @@ class ParallelTransferrer:
 
     @staticmethod
     def _get_connection_count(
-        file_size: int, max_count: int = 20, full_size: int = 100 * 1024 * 1024
+        file_size: int, max_count: int = 4, full_size: int = 100 * 1024 * 1024
     ) -> int:
         if file_size > full_size:
             return max_count
